@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Create Your Secret</h2>
+    <form action="{{ url_for('generate') }}" method="POST" class="mt-4">
+        <div class="mb-3">
+            <label for="secret_phrase" class="form-label">Secret Phrase</label>
+            <input 
+                type="text" 
+                name="secret_phrase" 
+                class="form-control custom-hover-input" 
+                id="secret_phrase" 
+                placeholder="Enter your secret phrase" 
+                required>
+        </div>
+        <div class="mb-3">
+            <label for="secret_text" class="form-label">Your Secret</label>
+            <textarea 
+                name="secret_text" 
+                class="form-control custom-hover-input" 
+                id="secret_text" 
+                placeholder="Type your secret" 
+                rows="4" 
+                required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary shadow">Submit</button>
+    </form>
+{% endblock %}

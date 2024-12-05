@@ -1,0 +1,18 @@
+.custom-hover-input {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+    border: 1px solid #ced4da; 
+    box-shadow: none; 
+}
+
+
+.custom-hover-input:hover {
+    border-color: #5bc0de; 
+    box-shadow: 0 0 5px rgba(91, 192, 222, 0.5); 
+}
+
+
+.custom-hover-input:focus {
+    border-color: #0d6efd; 
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.75); 
+    outline: none; 
+}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    <h2>Secret</h2>
+    <form method="POST" class="mt-4">
+        <div class="mb-3">
+            <label for="secret_phrase" class="form-label">Secret Phrase</label>
+            <input type="text" name="secret_phrase" class="form-control" id="secret_phrase" placeholder="Enter your secret phrase" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <div class="mb-3">
+        <h1><a href="/" class="btn btn-secondary">Home</a></h1>
+    </div>
+{% endblock %}
